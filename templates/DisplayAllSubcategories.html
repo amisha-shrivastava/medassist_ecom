@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<link href="/static/subcategory.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>List of Subcategories</title>
+</head>
+<body>
+<div class="main">
+<div class="box" style="padding: 20px;">
+<div class="boxheading">
+    <span class="head">Subcategory List</span>
+</div>
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>CID</th>
+              <th>SID</th>
+              <th>Subcategory Name</th>
+              <th>Icon</th>
+              <th>Update</th>
+          </tr>
+        </thead>
+        {% for row in subcategory %}
+            <tr><td>{{ row.categoryid }}</td>
+                <td>{{ row.subcategoryid }}</td>
+                <td>{{ row.subcategoryname }}</td>
+                <td><a href="/static/{{ row.subcategoryicon }}"><img src = "/static/{{ row.subcategoryicon }}" width="40"/></a> </td>
+                <td><a class=" black waves-effect waves-light btn modal-trigger" cid = "{{row.categoryid}}"  sid = "{{ row.subcategoryid }}" sname = "{{ row.subcategoryname }}" href="#modal1">Edit/Delete</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+     </table>
+</div></div>
+
+<!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <form action = "/submitsubcategory" enctype="multipart/form-data">
+      <input type="hidden" value="{{ row.subcategoryid }}" name="subcategoryid">
+      <div class="modalbox">
+            <div class="boxheading">
+                <span class="head">Subategory Interface</span>
+            </div>
+            <div>
+               <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input required id ="categoryid" name="categoryid" type="text" class="validate" value="{{row.categoryid}}">
+                        <label for="categoryid">Category Id</label>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input required id ="subcategoryname" name="subcategoryname" type="text" class="validate" value="{{row.subcategoryname}}">
+                        <label for="subcategoryname">Subcategory Name</label>
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col s6 btnrow">
+                    <button class="black btn waves-effect waves-light btnstyle" type="submit" name="action">Edit
+                        <i class="material-icons right">edit</i>
+                    </button>
+                </div>
+                <div class="col s6 btnrow">
+                    <button class="black btn waves-effect waves-light btnstyle" type="reset" name="action">Delete
+                        <i class="material-icons right">delete</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 btnrow">
+                    <div class="messagestyle">{{message}}</div>
+                </div>
+            </div>
+        </div>
+          <div class="modal-footer">
+            <a href="#!" class="black modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+      </form>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+<script type="text/javascript"
+            src="https://code.jquery.com/jquery-2.1.1.min.js">
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+        $(document).ready(function(){
+            $('#modal1').modal();
+            $('#modal2').modal();
+            $('#subcategoryname').val(" ")
+            $('#categoryid').val(" ")
+            $('.btn').click(function(){
+                $('#categoryid').val(".")
+                $('#categoryid').val($(this).attr('cid'))
+                $('#subcategoryname').val(".")
+                $('#subcategoryname').val($(this).attr('sname'))
+            })
+        });
+ </script>
+</html>
