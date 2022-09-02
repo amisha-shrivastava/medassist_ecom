@@ -1,7 +1,7 @@
 """medassist_ecom URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,20 +15,49 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import CategoryController
-from . import SubcategoryController
-
+from . import Category_Controller
+from . import Subcategory_Controller
+from . import Brand_Controller
+from . import Product_Controller
+from . import Admin_Controller
+from . import UserInterface
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('categoryinterface/', CategoryController.Category_Interface),
-    path('subcategoryinterface/', SubcategoryController.Subcategory_Interface),
-    path('submitcategory', CategoryController.Submit_Category),
-    path('submitsubcategory', SubcategoryController.Submit_Subcategory),
-    path('displayallcategories/', CategoryController.Display_All_Categories),
-    path('displayallsubcategories/',SubcategoryController.Display_All_Subategories),
-    path('editcategory/', CategoryController.Edit_Category),
-    path('deletecategory/',CategoryController.Delete_Category),
-    path('editsubcategory/', SubcategoryController.Edit_Subcategory),
-    path('deletesubcategory/',SubcategoryController.Delete_Subcategory),
-    path('editcategoryicon', CategoryController.Edit_CategoryIcon),
+    path('categoryinterface/',Category_Controller.Category_Interface),
+    path('submitcategory', Category_Controller.Submit_Category),
+    path('displayallcategories/', Category_Controller.Display_All_Category),
+    path('editcategory/', Category_Controller.Edit_Category),
+    path('deletecategory/', Category_Controller.Delete_Category),
+    path('editcategoryicon', Category_Controller.Edit_CategoryIcon),
+    path('fetch_all_category_json', Category_Controller.Fetch_All_Category_JSON),
+
+    path('subcategoryinterface/', Subcategory_Controller.Subcategory_Interface),
+    path('submitsubcategory', Subcategory_Controller.Submit_Subcategory),
+    path('displayallsubcategories', Subcategory_Controller.Display_All_Subcategory),
+    path('editsubcategory/', Subcategory_Controller.Edit_Subcategory),
+    path('deletesubcategory/', Subcategory_Controller.Delete_Subcategory),
+    path('editsubcategoryicon', Subcategory_Controller.Edit_SubcategoryIcon),
+
+    path('brandinterface',Brand_Controller.brand_interface),
+    path('fetchallsubcategoriesjson/',Subcategory_Controller.fetch_all_subcategory_json),
+    path('submitbrand',Brand_Controller.submit_brand),
+    path('displayallbrands',Brand_Controller.display_all_brands),
+    path('editbrand/',Brand_Controller.edit_brand),
+    path('deletebrand/',Brand_Controller.delete_brand),
+    path('editbrandicon',Brand_Controller.edit_brandicon),
+
+    path('productinterface/',Product_Controller.product_interface),
+    path('submitproduct',Product_Controller.submit_Product),
+    path('fetchallbrandsjson/',Product_Controller.fetch_all_brand_json),
+    path('displayallproducts/',Product_Controller.display_all_products),
+    path('editproductimage',Product_Controller.edit_productimage),
+    path('deleteproduct/',Product_Controller.delete_product),
+    path('editproducts/',Product_Controller.edit_product),
+
+path('adminlogin/',Admin_Controller.Admin_Login),
+path('adminlogout/',Admin_Controller.Admin_Logout),
+path('checkadminlogin',Admin_Controller.Check_Admin_Login),
+path('home/',UserInterface.Index),
+path('fetch_all_user_category/',UserInterface.Fetch_All_Category_JSON),
+path('fetch_all_products/',UserInterface.Fetch_All_Products),
 ]

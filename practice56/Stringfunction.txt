@@ -1,0 +1,201 @@
+JAVA SCRIPT String Functions
+=============================
+
+charAt(index)
+=============
+return character according to given index
+
+Example
+ <script>
+     function call() {
+         var x="Gwalior"
+         //alert(x.charAt(2))
+         var count=0
+         for(i=0;i<x.length;i++)
+         { var c=x.charAt(i)
+             if(c=='A' || c=='a' || c=='e')
+             {count++}
+         }
+          alert(count)
+     }
+ </script>
+ <html>
+ 
+ <body>
+  <input type="button" value="Click Here" onclick="call()">
+ </body>
+</html>
+
+charCodeAt(index)
+=================
+return ascii according to specified index
+
+<script>
+    function call() {
+     msg.innerHTML=""
+        var x=txt.value
+       // alert(x.charCodeAt(2))
+     var result=true
+     for(i=0;i<x.length;i++)
+     { v=x.charCodeAt(i)
+       if( !((v>=65 && v<=90) || (v>=97 && v<=122) || (v==32)) )
+       {result=false
+        break;}
+
+     }
+    if(result==false)
+    {
+     msg.innerHTML="<font color='red'>Pls input alphabets only</font>"
+    }
+    }
+</script>
+<html>
+
+<body>
+<input type="text" id="txt" onkeyup="call()"> <span id="msg"></span>
+
+
+</body>
+</html>
+
+endsWith(pattern)
+startsWith(pattern)
+includes(pattern)
+=================
+Example
+<script>
+    function call() {
+      var x="GWALIOR"
+      alert(x.includes('AALI'))
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+
+
+</body>
+</html>
+
+concat(str)
+===========
+concatinate string
+c="Gwalior".concat("city","bhopal","agra")
+
+
+indexOf(str,[si])
+return the index of specified str
+
+return -1 if str does not exist
+
+<script>
+    function call() {
+      var x="this is test program."
+      i=x.indexOf('is')
+      alert(i)
+      i=x.indexOf('is',i+1)
+      alert(i)
+      i=x.indexOf('is',i+1)
+      alert(i)
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+</body>
+</html>
+
+lastIndexOf(str,[si])
+=====================
+
+substring(si,[ei])
+==================
+read a string from start index to endindex-1
+<script>
+    function call() {
+      var x="this is test program."
+      alert(x.substring(3))
+      alert(x.substring(3,9))
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+</body>
+</html>
+
+replace(old,new)
+replaceAll(old,new)
+================
+replace old string with new string
+
+example
+
+<script>
+    function call() {
+      var x="this is test program."
+      alert(x.replaceAll("is","it"))
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+</body>
+</html>
+normalize()
+==========
+example
+<script>
+    function call() {
+      var x="\u0938\u0971\u0926\u0941\u092A"
+      alert(x.normalize())
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+</body>
+</html>
+
+split(str)
+=========
+<script>
+    function call() {
+      var x="this is test program"
+      var  k=x.split(" ")
+      alert(k[2])
+    }
+</script>
+<html>
+
+<body>
+<input type="button" value="Click Here" onclick="call()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

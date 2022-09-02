@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.maincontainer{
+	width: 100vw;
+     height: 100vh;
+     background: #bdc3c7;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.box{
+	width: 50%;
+	height: auto;
+	background: #fff;
+
+}
+.boxheading{
+	width: 100%;
+	height: 20%;
+	background: #01a3a4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.headingtext{
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+.btnrow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btnstyle{
+   width:80%;
+}
+.msgstyle{
+   font-size: 20px;
+   font-weight: bold;
+   color: black;
+}
+.modelbox{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.loginmaincontainer{
+	width: 100vw;
+     height: 100vh;
+     background: #66DAC8;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+}
+.loginbox{
+	width: 80%;
+	height: auto;
+    background: white;
+    background-size:cover;
+    border-radius:15px
+}
+.waveimg{
+width:377px;
+border-bottom-left-radius: 18px;
+border-top-left-radius: 15px;
+position: fixed;
+height: 486px;
+}
+.docimg{
+    width: 30%;
+    position: fixed;
+    padding-top: 51px;
+    padding-left: 147px;
+    padding-right: 57px;
+}
+.Idbox{
+    height:auto;
+    width: 70%;
+    background: white;
+    margin-left: 87px;
+}
+.loginbtn{
+display:flex;
+justify-content:center;
+align-element: center;
+}

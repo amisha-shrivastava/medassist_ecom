@@ -1,50 +1,58 @@
-.main{
-    width:100vw;
-    height:100vh;
-    background:#95afc0;
-    display: flex; /* moves the content to different locations */
-    justify-content: center; /*horizontal center*/
-    align-items: center; /*vertical center*/
+.maincontainer {
+    width: 100vw;
+    height: 100vh;
+    background: #c8d6e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .box{
     width:50%;
     height:auto;
-    background: white;
+    background: #FFF;
 }
-
-.boxheading{
+.modelbox{
     width:100%;
-    height:20%;
-    background: #7ed6df;
-    display: flex; /* moves the content to different locations */
-    justify-content: center; /*horizontal center*/
+    height:auto;
+    background: #FFF;
+}
+.boxheading{
+    width: 100%;
+    height: 20%;
+    background: #01a3a4;
+    align-items: center;
+
+    display:flex;
+}
+.headingtextinterface{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
     align-items:center;
+    display: flex;
+    padding-left: 5px;
+    justify-content: center;
 }
 
-.head{
+
+
+.headingtext{
     font-size: 26px;
     font-weight: bold;
-    color:#FFF;
-}
+    color: #FFF;
 
+    width: 40%;
+    display: flex;justify-content: flex-start;
+}
 .btnrow{
     display: flex;
     justify-content: center;
 }
-
 .btnstyle{
-    width: 80%;
+    width:80%;
 }
-
 .messagestyle{
     font-size: 20px;
     font-weight: bold;
     color: #000;
-}
-
-.modalbox{
-    width:100%;
-    height:auto;
-    background: white;
 }

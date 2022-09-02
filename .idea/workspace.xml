@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0f3ae13-f947-407d-9e73-380f6ed3e84b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/medassist_ecom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/medassist_ecom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/allopathy.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/allopathy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/amisha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/atab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ayurveda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hnw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/homeopathy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/naturopathy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/subcategory.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/CategoryController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/Pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/medassist_ecom/Pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/SubcategoryController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/medassist_ecom/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/medassist_ecom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/medassist_ecom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medassist_ecom/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/medassist_ecom/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CategoryInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CategoryInterface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/DisplayAllCAtegories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/DisplayAllCAtegories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/DisplayAllSubcategories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/DisplayAllSubcategories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/SubcategoryInterface.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/SubcategoryInterface.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Byd0MjnEsaZYEFCpjRoIFe7y0d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/medassist_ecom"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="medassist_ecom" type="Python.DjangoServer" factoryName="Django server">
+      <module name="medassist_ecom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0f3ae13-f947-407d-9e73-380f6ed3e84b" name="Default Changelist" comment="" />
+      <created>1657882034408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657882034408</updated>
+      <workItem from="1657882035828" duration="2697000" />
+      <workItem from="1658108430807" duration="38000" />
+      <workItem from="1658140783026" duration="3690000" />
+      <workItem from="1658227170347" duration="2923000" />
+      <workItem from="1658232206266" duration="381000" />
+      <workItem from="1658281286040" duration="87000" />
+      <workItem from="1658313715052" duration="2417000" />
+      <workItem from="1658318701214" duration="19000" />
+      <workItem from="1658399858426" duration="3743000" />
+      <workItem from="1658407668480" duration="356000" />
+      <workItem from="1658486595023" duration="592000" />
+      <workItem from="1658489108150" duration="725000" />
+      <workItem from="1658745999253" duration="34000" />
+      <workItem from="1658747747323" duration="1362000" />
+      <workItem from="1658832080184" duration="4668000" />
+      <workItem from="1658905638250" duration="597000" />
+      <workItem from="1658918381008" duration="3108000" />
+      <workItem from="1658997585892" duration="15000" />
+      <workItem from="1658999274700" duration="249000" />
+      <workItem from="1659004987558" duration="4100000" />
+      <workItem from="1659061147316" duration="9000" />
+      <workItem from="1659090422643" duration="4180000" />
+      <workItem from="1659107138299" duration="5000" />
+      <workItem from="1659319080736" duration="16000" />
+      <workItem from="1659350626083" duration="3412000" />
+      <workItem from="1659358354336" duration="596000" />
+      <workItem from="1659435366270" duration="4046000" />
+      <workItem from="1659490754480" duration="12000" />
+      <workItem from="1659522995471" duration="3892000" />
+      <workItem from="1659535125786" duration="76000" />
+      <workItem from="1659663578657" duration="12000" />
+      <workItem from="1659692925740" duration="5691000" />
+      <workItem from="1659922893274" duration="84000" />
+      <workItem from="1660646572606" duration="3568000" />
+      <workItem from="1660730664048" duration="597000" />
+      <workItem from="1660733369516" duration="3876000" />
+      <workItem from="1660905388761" duration="3228000" />
+      <workItem from="1661005078752" duration="595000" />
+      <workItem from="1661055825458" duration="22000" />
+      <workItem from="1661165192748" duration="3943000" />
+      <workItem from="1661338668212" duration="2119000" />
+      <workItem from="1661342640814" duration="597000" />
+      <workItem from="1661480865421" duration="161000" />
+      <workItem from="1661506743975" duration="6137000" />
+      <workItem from="1661657660294" duration="55000" />
+      <workItem from="1661760887467" duration="3098000" />
+      <workItem from="1661769396310" duration="3906000" />
+      <workItem from="1661784666942" duration="23000" />
+      <workItem from="1661910125799" duration="16000" />
+      <workItem from="1661917763174" duration="702000" />
+      <workItem from="1661933023360" duration="1135000" />
+      <workItem from="1661942558133" duration="3353000" />
+      <workItem from="1661947228347" duration="297000" />
+      <workItem from="1661949692501" duration="15000" />
+      <workItem from="1662118905422" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

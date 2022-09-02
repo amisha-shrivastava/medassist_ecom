@@ -1,0 +1,345 @@
+Arrays
+length: length of an array
+Traversing Methods
+==================
+for loop
+========
+Example 
+function call() {
+      var arr=['Gwalior','Indore','Bhopal','Noida']
+        for(i=0;i<arr.length;i++)
+        {alert(arr[i])}
+          }
+map()
+=====
+ [var result]=arr.map((item,index)=>{
+ 
+ 
+ 
+ 
+ })         
+Example
+function call() {
+      var arr=['Gwalior','Indore','Bhopal','Noida']
+        arr.map((item,index)=>{
+         alert(item+","+index)
+        })
+    }
+ 
+Example
+
+  function call() {
+        var arr=[['Pepsi',1000],['Fanta',1200],['Coke',3000],['Frooti',500]]
+       var result=   arr.map((item,index)=>{
+           alert(item+","+index)
+           discount=item[1]*10/100
+           item.push(discount)
+           return item
+          })
+          alert(result)
+    }
+
+forEach()
+=========
+forEach((item,index)=>{
+
+
+}
+)
+
+
+Example
+
+<script>
+
+function call() {
+      var arr=[['Pepsi',1000],['Fanta',1200],['Coke',3000],['Frooti',500]]
+    arr.forEach((item,index)=>{
+         alert(item+","+index)
+           })
+        
+    }
+    <script>
+        function call() {
+       var arr=[
+            {'cityid':100,'cityname':'Noida','min':30,'max':40,'humidity':100,'image':'cloudy.png'},
+            {'cityid':200,'cityname':'Pune','min':32,'max':36,'humidity':80,'image':'sunny.png'},
+            {'cityid':300,'cityname':'Kargil','min':-14,'max':-2,'humidity':100,'image':'snowy.png'},
+            {'cityid':100,'cityname':'Gwalior','min':30,'max':44,'humidity':70,'image':'overcast.png'},
+          ]
+         var htm=''
+            htm+=`<table border="1" cellspacing="0" width="40%">`
+            htm+=`<caption><h4>Weather Forcast of Major Cities</h4></caption>`
+            htm+=`<tr><th>Id</th><th>City Name</th><th>Min</th><th>Max</th><th>Humidity</th><th>Picture</th></tr>`
+            arr.map((item)=>{
+                htm+=`<tr><td>${item.cityid}</td><td>${item.cityname}</td><td>${item.min}</td><td>${item.max}</td><td>${item.humidity}</td><td><img src='${item.image}' width="40"></td></tr>`
+    
+            })
+            htm+="</table>"
+    
+            result.innerHTML=htm
+    
+    
+    
+    
+    
+        }
+    </script>
+    <html>
+    
+    <body>
+    <input type="button" value="Click Here" onclick="call()"><br><br>
+    <div id="result"></div>
+    
+    </body>
+</html>
+    
+Filtering Records
+=================
+<script>
+    function call() {
+   var arr=[
+        {'cityid':100,'cityname':'Udaipur','min':30,'max':40,'humidity':100,'image':'cloudy.png'},
+        {'cityid':200,'cityname':'Pune','min':32,'max':36,'humidity':80,'image':'sunny.png'},
+        {'cityid':300,'cityname':'Kargil','min':-14,'max':-2,'humidity':100,'image':'snowy.png'},
+        {'cityid':100,'cityname':'Jaipur','min':30,'max':44,'humidity':70,'image':'overcast.png'},
+      ]
+    var response=arr.filter((item)=>{
+
+        return(item.cityname.toLowerCase().includes(txt.value.toLowerCase()))
+    })
+
+
+
+
+     var htm=''
+        htm+=`<table border="1" cellspacing="0" width="40%">`
+        htm+=`<caption><h4>Weather Forcast of Major Cities</h4></caption>`
+        htm+=`<tr><th>Id</th><th>City Name</th><th>Min</th><th>Max</th><th>Humidity</th><th>Picture</th></tr>`
+        response.map((item)=>{
+            htm+=`<tr><td>${item.cityid}</td><td>${item.cityname}</td><td>${item.min}</td><td>${item.max}</td><td>${item.humidity}</td><td><img src='${item.image}' width="40"></td></tr>`
+
+        })
+        htm+="</table>"
+
+        result.innerHTML=htm
+
+
+
+
+
+    }
+</script>
+<html>
+
+<body>
+<input type="text" id="txt" onkeyup="call()"><br><br>
+<div id="result"></div>
+
+</body>
+</html>
+
+
+ 
+sorting()
+========
+<script>
+    function call() {
+   var arr=[
+        {'cityid':100,'cityname':'Udaipur','min':30,'max':40,'humidity':100,'image':'cloudy.png'},
+        {'cityid':200,'cityname':'Pune','min':32,'max':36,'humidity':80,'image':'sunny.png'},
+        {'cityid':300,'cityname':'Kargil','min':-14,'max':-2,'humidity':100,'image':'snowy.png'},
+        {'cityid':100,'cityname':'Jaipur','min':30,'max':44,'humidity':70,'image':'overcast.png'},
+      ]
+    var response=arr.sort((item1,item2)=>item1.min>=item2.min?-1:1)
+
+
+
+
+
+
+     var htm=''
+        htm+=`<table border="1" cellspacing="0" width="40%">`
+        htm+=`<caption><h4>Weather Forcast of Major Cities</h4></caption>`
+        htm+=`<tr><th>Id</th><th>City Name</th><th>Min</th><th>Max</th><th>Humidity</th><th>Picture</th></tr>`
+        response.map((item)=>{
+            htm+=`<tr><td>${item.cityid}</td><td>${item.cityname}</td><td>${item.min}</td><td>${item.max}</td><td>${item.humidity}</td><td><img src='${item.image}' width="40"></td></tr>`
+
+        })
+        htm+="</table>"
+
+        result.innerHTML=htm
+
+
+
+
+
+    }
+</script>
+<html>
+
+<body>
+<input type="button"  value="Sorting" onclick="call()"><br><br>
+<div id="result"></div>
+
+</body>
+</html>
+
+sorting() by Name
+==================
+<script>
+    function call() {
+   var arr=[
+        {'cityid':100,'cityname':'Udaipur','min':30,'max':40,'humidity':100,'image':'cloudy.png'},
+        {'cityid':200,'cityname':'Pune','min':32,'max':36,'humidity':80,'image':'sunny.png'},
+        {'cityid':300,'cityname':'Kargil','min':-14,'max':-2,'humidity':100,'image':'snowy.png'},
+        {'cityid':100,'cityname':'Jaipur','min':30,'max':44,'humidity':70,'image':'overcast.png'},
+      ]
+    var response=arr.sort((item1,item2)=>item1.cityname.localeCompare(item2.cityname)>0?1:-1)
+     var htm=''
+        htm+=`<table border="1" cellspacing="0" width="40%">`
+        htm+=`<caption><h4>Weather Forcast of Major Cities</h4></caption>`
+        htm+=`<tr><th>Id</th><th>City Name</th><th>Min</th><th>Max</th><th>Humidity</th><th>Picture</th></tr>`
+        response.map((item)=>{
+            htm+=`<tr><td>${item.cityid}</td><td>${item.cityname}</td><td>${item.min}</td><td>${item.max}</td><td>${item.humidity}</td><td><img src='${item.image}' width="40"></td></tr>`
+
+        })
+        htm+="</table>"
+
+        result.innerHTML=htm
+
+
+
+
+
+    }
+</script>
+<html>
+
+<body>
+<input type="button"  value="Sorting" onclick="call()"><br><br>
+<div id="result"></div>
+
+</body>
+</html>
+
+
+Date Functions
+================
+new Date() class
+================
+   <script>
+       function call() {
+           var cd=new Date()
+           result.innerHTML=cd
+   
+   
+   
+       }
+   </script>
+   <html>
+   
+   <body>
+   <input type="button"  value="Click Here" onclick="call()"><br><br>
+   <h1>
+   <div id="result"></div>
+   </h1>
+   </body>
+</html>
+
+getDate(),getMonth(),getFullYear()
+getHours(),getMinutes(),getSeconds()
+==================================
+
+<script>
+    var dt
+    function call() {
+        var cd=new Date()
+        var month=['Jan','Feb','Mar','Apr', 'May' ,'June','July','Aug','Sep','Oct','Nov','Dec']
+        var todaysDate=cd.getDate()+" "+month[cd.getMonth()]+" "+cd.getFullYear()
+        var todaysTime=cd.getHours()+":"+cd.getMinutes()+" "+cd.getSeconds()
+
+
+        result.innerHTML=todaysDate+"<br><br>"+todaysTime
+
+
+
+    }
+   function showTime()
+   {
+      dt=setInterval(call,1000)
+   }
+function  stopTime() {
+        clearInterval(dt)
+
+}
+
+</script>
+<html>
+
+<body>
+<input type="button"  value="Click Here" onclick="showTime()">
+<input type="button"  value="Stop" onclick="stopTime()"><br><br>
+<h1>
+<div id="result"></div>
+</h1>
+</body>
+</html>
+
+setDate(n)/setMonth(n)/setFullyear(n)
+setHours(n)/setMiniutes(n)/setSeconds(n)
+======================================
+<script>
+
+    function call() {
+        var cd=new Date()
+        var nd=cd.setDate(26)
+        result.innerHTML=new Date(nd)
+    }
+
+
+</script>
+<html>
+
+<body>
+<input type="button"  value="Click Here" onclick="call()">
+<br><br>
+<h1>
+<div id="result"></div>
+</h1>
+</body>
+</html>
+
+Example to create specified date
+================================
+<script>
+
+    function call() {
+        var cd=new Date('03 may 2002')
+
+        result.innerHTML=cd
+    }
+
+
+</script>
+<html>
+
+<body>
+<input type="button"  value="Click Here" onclick="call()">
+<br><br>
+<h1>
+<div id="result"></div>
+</h1>
+</body>
+</html>
+
+
+
+
+
+
+ 
+ 
+ 
+          
+

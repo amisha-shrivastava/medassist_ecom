@@ -1,7 +1,5 @@
-import pymysql as MySQL
-
-
+import pymysql as MySql
 def ConnectionPooling():
-    DB = MySQL.connect(host='localhost', port=3306, user='root', passwd='1510', database='medassist_com', cursorclass = MySQL.cursors.DictCursor)
-    CMD = DB.cursor()
-    return DB, CMD
+    DB=MySql.connect(host='localhost',port=3306,user='root',password='123',database='medassist_com',cursorclass=MySql.cursors.DictCursor)
+    CMD=DB.cursor()
+    return DB,CMD
